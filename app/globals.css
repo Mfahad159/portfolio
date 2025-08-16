@@ -1,5 +1,29 @@
 @import "tailwindcss";
-*{
-  font-family: Outfit;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* Custom colors */
+  --lighthover: #fcf4ff;
+  --darkhover: #2a004a;
+  --darktheme: #11001F;
 }
 
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* Custom colors */
+  --color-lighthover: var(--lighthover);
+  --color-darkhover: var(--darkhover);
+  --color-darktheme: var(--darktheme);
+  
+  /* Custom font families */
+  --font-outline: "Outline", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+  --font-ovo: "Ovo", serif;
+  
+  /* Set default font to Outfit */
+  --font-sans: var(--font-outfit);
+}
