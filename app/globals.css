@@ -34,4 +34,10 @@
   
   /* Set default font to Outfit */
   --font-sans: var(--font-outfit);
+  
+  /* Custom grid template columns */
+}
+
+.grid-cols-auto {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
