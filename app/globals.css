@@ -8,6 +8,10 @@
   --lighthover: #fcf4ff;
   --darkhover: #2a004a;
   --darktheme: #11001F;
+  
+  /* Custom box shadows */
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white: 4px 4px 0 #fff;
 }
 
 @theme inline {
@@ -18,6 +22,10 @@
   --color-lighthover: var(--lighthover);
   --color-darkhover: var(--darkhover);
   --color-darktheme: var(--darktheme);
+  
+  /* Custom box shadows */
+  --shadow-black: var(--shadow-black);
+  --shadow-white: var(--shadow-white);
   
   /* Custom font families */
   --font-outline: "Outline", sans-serif;
