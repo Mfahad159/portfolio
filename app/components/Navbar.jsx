@@ -31,7 +31,7 @@ const Navbar = () => {
                 flex items-center justify-between z-50 duration-500 ${isScroll ? "bg-white/50 backdrop-blur-lg shadow-sm" : ""}`}>
         <a href="#top">
           <div className='-mg-2'>
-            <span className='text-6xl font-bold text-black font-ovo'>Fahad</span><span className='text-7xl text-red-500 ml-1.5'>.</span>
+            <span className='text-6xl font-bold text-black font-ovo'>Fahad</span><span className='text-7xl text-red-500 ml-1.5'>.</span> 
           </div>
           {/* <Image src={assets.logo_2} className='w-28
          cursor-pointer mr-14' alt="" />*/}
