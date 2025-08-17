@@ -3,7 +3,8 @@ import Image from 'next/image'
 import { assets } from '@/assets/assets'
 const Header = () => {
     return (
-        <>
+       <div className='w-11/12 max-w-3xl text-center mx-auto h-screen
+                       flex flex-col items-center justify-center gap-4 pt-20'>
             <div>
                 <Image src={assets.profile_img} className='rounded-full w-32' alt=''></Image>
             </div>
@@ -16,7 +17,7 @@ const Header = () => {
                 MERN web developer and GenAI Engineer
             </h1>
             <p className='max-w-2xl mx:auto font-ovo'>
-                MERN Developer & GenAI Engineer crafting smart web solutions and AI-powered experiences. Building the future, one line of code at a time.
+            Building smart web apps with MERN and GenAI magic. Developer by day, AI innovator always.
             </p>
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
                 <a className='px-10 
@@ -29,7 +30,7 @@ const Header = () => {
                     <Image src={assets.download_icon} className='w-4' alt=''></Image>
                 </a>
             </div>
-        </>
+       </div>
     )
 }
 
