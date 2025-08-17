@@ -7,7 +7,7 @@ const Services = () => {
             <h4 className='text-center mb-2 text-lg font-ovo'>What I offer</h4>
             <h2 className='text-center text-5xl font-ovo'>My Services</h2>
             <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>
-                I offer full-stack web development with MERN stack, AI integration for smart applications, workflow automation solutions, and technical consulting. From responsive websites to intelligent bots and GenAI-powered features, I deliver scalable solutions that enhance user experience and business efficiency.
+            Building scalable MERN applications with AI integration and automation. Helping teams create smart, efficient solutions that support growth and digital transformation
             </p>
             <div className='grid grid-cols-auto gap-6 my-10'>
                 {serviceData.map(({ icon, title, description, link }, index) => {
