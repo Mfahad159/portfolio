@@ -79,29 +79,33 @@ export const assets = {
     right_arrow_bold_dark
 };
 
-export const workData = [
+export const workData = [ 
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Thinklytics - Property Market Analyser',
+        description: 'Data Analysis & Visualization (Python, Streamlit)',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'AI Habit Tracker',
+        description: 'Productivity App with Smart Reminders & Analytics',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Trendy AI Articles Generator',
+        description: 'Full-Stack App with Llama-3-6B AI Integration',
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Student Management System',
+        description: 'Bash Command-Line Project for Records & CGPA',
         bgImage: '/work-4.png',
     },
+    // {
+    //     title: 'Console Games & Management System',
+    //     description: 'C/C++ Based Projects (Problem-Solving Focus)',
+    //     bgImage: '/work-5.png',
+    // },
 ]
-
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
     { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
