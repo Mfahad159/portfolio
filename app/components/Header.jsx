@@ -14,10 +14,10 @@ const Header = ({ isDarkMode }) => {
                 <Image src={assets.hand_icon} className='w-6' alt=''></Image>
 
             </h3>
-            <h1 className={`text-3xl sm:text-6xl lg:text-[66px] font-ovo ${isDarkMode?"text-white/80":""}`}>
+            <h1 className={`text-3xl sm:text-6xl lg:text-[66px] font-ovo ${isDarkMode?"text-white":""}`}>
                 MERN web developer and GenAI Engineer
             </h1>
-            <p className='max-w-2xl mx:auto font-ovo'>
+            <p className={`max-w-2xl mx:auto font-ovo ${isDarkMode?"text-white/80":""}`}>
                 Building smart web apps with MERN and GenAI magic. Developer by day, AI innovator always.
             </p>
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>

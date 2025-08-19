@@ -8,11 +8,22 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
   const sideMenuRef = useRef();
 
   const openMenu = () => {
-    sideMenuRef.current.style.transform = 'translateX(-16rem)';
-  }
+    const el = sideMenuRef.current;
+    if (!el) return;
+    el.style.transitionProperty = 'transform';
+    el.style.transitionDuration = '300ms';
+    el.style.transitionTimingFunction = 'ease-out';
+    el.style.transform = 'translateX(-16rem)';
+  };
+  
   const closeMenu = () => {
-    sideMenuRef.current.style.transform = 'translateX(0)';
-  }
+    const el = sideMenuRef.current;
+    if (!el) return;
+    el.style.transitionProperty = 'transform';
+    el.style.transitionDuration = '300ms';
+    el.style.transitionTimingFunction = 'ease-in-out';
+    el.style.transform = 'translateX(0)';
+  };
   useEffect(() => {
     window.addEventListener('scroll', () => {
       if (scrollY > 50) {
