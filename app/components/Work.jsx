@@ -2,12 +2,12 @@ import { assets, workData } from '@/assets/assets'
 import React from 'react'
 import Image from 'next/image'
 import { Asset } from 'next/font/google'
-const Work = () => {
+const Work = ({isDarkMode}) => {
     return (
         <div id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
             <h4 className='text-center mb-2 text-lg font-ovo'>My Portfolio</h4>
             <h2 className='text-center text-5xl font-ovo'>My Work</h2>
-            <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>
+            <p className={`text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo ${isDarkMode?"text-white/80":""}`}>
                 These are some of the projects I’ve built, reflecting my journey in software development and practical problem-solving
             </p>
             <div className='grid grid-cols-auto my-10 gap-5'>

@@ -13,7 +13,7 @@ const About = ({ isDarkMode }) => {
                         className='w-full rounded-3xl' />
                 </div>
                 <div className='flex-1'>
-                    <p className='mb-10 max-w-2xl font-ovo'>
+                    <p className='text-center mb-10 max-w-2xl font-ovo'>
                         I'm a full-stack developer building smart web solutions with MERN stack, Python, and AI. From responsive web apps to intelligent bots with GenAI integration, I create practical tools that actually work. Clean code, real solutions.
                     </p>
                     <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
