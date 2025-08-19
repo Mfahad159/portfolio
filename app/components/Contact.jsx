@@ -31,7 +31,7 @@ const Contact = ({isDarkMode}) => {
     };
 
 	return (
-		<div id='contact' className={`w-full px-[12%] py-10 scroll-mt-20 bg-no-repeat bg-center`} 
+		<div id='contact' className={`w-full px-[12%] py-6 scroll-mt-20 bg-no-repeat bg-center`} 
      style={{ 
        backgroundImage: isDarkMode ? 'none' : 'url(/footer-bg-color.png)', 
        backgroundSize: '90% auto' 
@@ -45,12 +45,12 @@ const Contact = ({isDarkMode}) => {
             <form onSubmit={onSubmit} className='mx-2-2xl mx-auto'>
                 <div className='grid grid-cols-auto gap-6 mt-10 mb-8'>
                     <input name='name' className={`flex-1 p-3 outline-none border-[0.5px] border-gray-400 
-                     rounded-md bg-white ${isDarkMode?"border-white/90":""}`} type="text" placeholder='Enter your name' required/>
-                    <input name='email' className={`flex-1 p-3 outline-none border-[0.5px] border-gray-400 
-                     rounded-md bg-white ${isDarkMode?"border-white/90":""}`} type="email" placeholder='Enter your email' required/>
+                     rounded-md ${isDarkMode ? "bg-00001a border-white/90" : "bg-white"}`} type="text" placeholder='Enter your name' required/>
+                   <input name='email' className={`flex-1 p-3 outline-none border-[0.5px] border-gray-400 
+                     rounded-md ${isDarkMode?"border-white/90 bg-00001a":"bg-white"}`} type="email" placeholder='Enter your email' required/>
                 </div>
                 <textarea name='message' className={`w-full p-4 outline-none border-[0.5px] border-gray-400 
-                     rounded-md bg-white mb-6 ${isDarkMode?"border-white/90":""}`} rows='6' placeholder='Enter your message' required></textarea>
+                     rounded-md mb-6 ${isDarkMode?"border-white/90 bg-[#00001a]":"bg-white "}`} rows='6' placeholder='Enter your message' required></textarea>
                 <button  className={`py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80
                                     text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer ${isDarkMode?"bg-transparent border-[0.5px] border-white/90 hover:bg-darkhover ":""}`}
                 type='submit'>Submit now <Image src={assets.right_arrow_white} alt='' className='w-4'></Image></button>
