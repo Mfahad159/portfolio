@@ -33,6 +33,7 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
     el.style.transitionTimingFunction = 'ease-in-out';
     el.style.transform = 'translateX(0)';
   };
+
   useEffect(() => {
     window.addEventListener('scroll', () => {
       if (scrollY > 50) {
@@ -44,7 +45,6 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
   }, [])
   return (
     <>
-      {/* Scroll Progress Bar */}
       <motion.div
         className={`fixed top-0 left-0 right-0 h-px z-[9999] origin-left pointer-events-none transform-gpu ${
           isDarkMode ? 'bg-gradient-to-r from-purple-500 to-pink-500' : 'bg-gradient-to-r from-blue-500 to-green-500'
