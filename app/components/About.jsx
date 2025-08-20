@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "motion/react"
 import Image from 'next/image'
 import { assets, infoList, toolsData } from '@/assets/assets'
 const About = ({ isDarkMode }) => {
