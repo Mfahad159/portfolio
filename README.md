@@ -4,7 +4,7 @@ A modern portfolio website built with Next.js, React, and Tailwind CSS.
 
 ## 🚀 Live Demo
 
-Visit my portfolio: [https://Mfahad159.github.io/portfolio](https://yourusername.github.io/portfolio)
+Visit my portfolio: [https://Mfahad159.github.io/portfolio](https://Mfahad159.github.io/portfolio)
 
 ## 🛠️ Technologies Used
 
