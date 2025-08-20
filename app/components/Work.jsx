@@ -2,7 +2,6 @@ import { assets, workData } from '@/assets/assets'
 import React from 'react'
 import {motion} from 'motion/react'
 import Image from 'next/image'
-import { Asset } from 'next/font/google'
 const Work = ({isDarkMode}) => {
     return (
         <motion.div

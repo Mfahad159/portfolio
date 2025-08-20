@@ -63,7 +63,7 @@ const Contact = ({isDarkMode}) => {
             viewport={{ once: true, amount: 0.3 }}
             transition={{delay:0.7, duration: 0.5 }}
             
-            className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>
+            className={`text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo ${isDarkMode?"text-white/80":""}`}>
 				I'd love to hear from you! If you have any questions, comments, or feedback,
                 please use the form below.
 			</motion.p>

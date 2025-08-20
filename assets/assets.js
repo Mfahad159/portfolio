@@ -26,10 +26,15 @@ import menu_black from './menu-black.png';
 import menu_white from './menu-white.png';
 import close_black from './close-black.png';
 import close_white from './close-white.png';
-import web_icon from './web-icon.png';
+//SERVICES ICONS
+import web_icon from './web-icon-1.png';
 import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
-import graphics_icon from './graphics-icon.png';
+import ai_icon from './ai-icon.png'
+import api_icon from './api-icon.png'
+
+
+
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
@@ -37,7 +42,13 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import profile_img_2 from './profile-image-2.png'
 import user_image_2 from './user-image-2.png'
 import logo_2 from './logo-2.png'
+import mvp_icon from './mvp-icon-1.png'
 export const assets = {
+    api_icon,
+    ai_icon,
+    web_icon,
+    mvp_icon,
+    
     logo_2,
     user_image_2,
     profile_img_2,
@@ -72,7 +83,6 @@ export const assets = {
     web_icon,
     mobile_icon,
     ui_icon,
-    graphics_icon,
     right_arrow,
     send_icon,
     right_arrow_bold,
@@ -107,11 +117,38 @@ export const workData = [
     // },
 ]
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
+    {
+        icon: assets.web_icon,
+        title: 'Full-Stack Web Development',
+        description: 'Build modern, scalable web applications using Next.js, React, Node.js, and secure backend integrations.',
+        link: ''
+    },
+    {
+        icon: assets.mvp_icon,
+        title: 'MVP Development for Startups',
+        description: 'Rapidly develop and deploy Minimum Viable Products using Next.js, Tailwind, and Framer Motion for early-stage businesses.',
+        link: ''
+    },
+    {
+        icon: assets.ai_icon,
+        title: 'AI Chatbot & GenAI Integration',
+        description: 'Integrate AI-powered chatbots and Generative AI models using Python, LangChain, and OpenAI for enhanced user engagement.',
+        link: ''
+    },
+    {
+        icon: assets.ui_icon,
+        title: 'UI/UX Design with Tailwind & Framer Motion',
+        description: 'Design and develop interactive, responsive, and visually stunning interfaces with smooth animations and clean layouts.',
+        link: ''
+    },
+    {
+        icon: assets.api_icon,
+        title: 'AI Automation & API Integration',
+        description: 'Streamline workflows by integrating AI APIs, automation scripts, and advanced solutions into your existing systems.',
+        link: ''
+    }
+];
+
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages & Frameworks', description: 'Python, JavaScript, React Js, Next Js, HTML, CSS' },
