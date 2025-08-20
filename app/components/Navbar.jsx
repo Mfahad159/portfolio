@@ -2,10 +2,19 @@ import React, { useEffect, useState } from 'react'
 import { useRef } from 'react'
 import Image from 'next/image'
 import { assets } from '@/assets/assets'
+import { motion, useScroll, useSpring } from 'motion/react'
 
 const Navbar = ({isDarkMode,setIsDarkMode}) => {
   const [isScroll, setIsScroll] = useState(false)
   const sideMenuRef = useRef();
+  
+  // Add scroll progress tracking
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
 
   const openMenu = () => {
     const el = sideMenuRef.current;
@@ -35,6 +44,15 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
   }, [])
   return (
     <>
+      {/* Scroll Progress Bar */}
+      <motion.div
+        className={`fixed top-0 left-0 right-0 h-px z-[9999] origin-left pointer-events-none transform-gpu ${
+          isDarkMode ? 'bg-gradient-to-r from-purple-500 to-pink-500' : 'bg-gradient-to-r from-blue-500 to-green-500'
+        }`}
+        style={{ scaleX }}
+      />
+      
+      {/* Existing navbar content */}
       <div className="w-11/12 fixed top-0 right-0 -z-10 translate-y-[-80%] dark:hidden relative h-[500px]">
   <Image
     src="/header-bg-color.png"
