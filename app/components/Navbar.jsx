@@ -35,10 +35,14 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
   }, [])
   return (
     <>
-      <div className='w-11/12 fixed top-0 right-0 -z-10 translate-y-[-80%] dark:hidden'>
-        <Image src={assets.header_bg_color} alt='' className='w-full h-full object-cover' >
-        </Image>
-      </div>
+      <div className="w-11/12 fixed top-0 right-0 -z-10 translate-y-[-80%] dark:hidden relative h-[500px]">
+  <Image
+    src="/header-bg-color.png"
+    alt="Header_bg"
+    fill
+    className="object-cover"
+  />
+</div>
       <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-2
                 flex items-center justify-between z-50 duration-500 ${isScroll ? "backdrop-blur-lg shadow-sm" : ""}`}
                 style={{

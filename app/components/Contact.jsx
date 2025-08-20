@@ -32,10 +32,10 @@ const Contact = ({isDarkMode}) => {
 
 	return (
 		<div id='contact' className={`w-full px-[12%] py-6 scroll-mt-20 bg-no-repeat bg-center`} 
-     style={{ 
-       backgroundImage: isDarkMode ? 'none' : 'url(/footer-bg-color.png)', 
-       backgroundSize: '90% auto' 
-     }}>
+        style={{ 
+            backgroundImage: isDarkMode ? 'none' : 'url(/footer-bg-color.png?v=1)', 
+            backgroundSize: '90% auto' 
+          }}>
 			<h4 className='text-center mb-2 text-lg font-ovo'>Connect with me</h4>
 			<h2 className='text-center text-5xl font-ovo'>Get in Touch</h2>
 			<p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>
