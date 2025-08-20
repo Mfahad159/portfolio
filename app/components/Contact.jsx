@@ -80,14 +80,14 @@ const Contact = ({isDarkMode}) => {
                     transition={{delay:0.9,duration:0.5}}
                     
                     name='name' className={`flex-1 p-3 outline-none border-[0.5px] border-gray-400 
-                     rounded-md ${isDarkMode ? "bg-00001a border-white/90" : "bg-white"}`} type="text" placeholder='Enter your name' required/>
+                     rounded-md ${isDarkMode ? "border-white/90 bg-[#00001a]" : "bg-white"}`} type="text" placeholder='Enter your name' required/>
                    <motion.input
                     initial={{x:50,opacity:0}}
                     whileInView={{x:0,opacity:1}}
                     transition={{delay:1,duration:0.5}}
                    
                    name='email' className={`flex-1 p-3 outline-none border-[0.5px] border-gray-400 
-                     rounded-md ${isDarkMode?"border-white/90 bg-00001a":"bg-white"}`} type="email" placeholder='Enter your email' required/>
+                     rounded-md ${isDarkMode?"border-white/90 bg-[#00001a]":"bg-white"}`} type="email" placeholder='Enter your email' required/>
                 </div>
                 <motion.textarea
                  initial={{y:100,opacity:0}}
