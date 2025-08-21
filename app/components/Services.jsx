@@ -10,7 +10,7 @@ const Services = ({ isDarkMode }) => {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 1 }}
         
-        id='services' className='w-full px-[12%] py-10 scroll-mt-20'>
+        id='services' className='w-full px-[12%] py-5 scroll-mt-20'>
             <motion.h4
             initial={{ y:-20,opacity: 0 }}
             whileInView={{y:0, opacity: 1 }}

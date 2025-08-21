@@ -1,6 +1,7 @@
-import { workData } from '@/assets/assets';
+import { assets, workData } from '@/assets/assets';
 import React from 'react';
 import { motion } from 'motion/react';
+import Image from 'next/image';
 
 const Work = ({ isDarkMode }) => {
     return (
@@ -54,7 +55,7 @@ const Work = ({ isDarkMode }) => {
                         key={index}
                         whileHover={{ scale: 1.05 }}
                         transition={{ duration: 0.3 }}
-                        className={`p-5 rounded-xl shadow-md transition-colors duration-300
+                        className={`p-5 rounded-xl hover:cursor-pointer shadow-md transition-colors duration-300
                           ${isDarkMode ? "bg-gray-800 text-white" : "bg-white text-black"} 
                           border border-gray-300 dark:border-gray-700`}
                     >
@@ -73,6 +74,26 @@ const Work = ({ isDarkMode }) => {
                     </motion.div>
                 ))}
             </motion.div>
+
+            {/* Show More Button */}
+            <motion.a
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 1.1, duration: 0.5 }}
+                href="https://github.com/Mfahad159?tab=repositories"
+                target="_blank"
+                className={`w-max flex items-center justify-center gap-2 
+                            text-gray-700 border-[0.5px] border-gray-700
+                            rounded-full py-3 px-10 mx-auto my-20 hover:bg-lighthover duration-500
+                            ${isDarkMode ? "text-white border-white dark:hover:bg-darkhover" : ""}`}
+            >
+                Show more
+                <Image
+                    src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
+                    alt='right arrow'
+                    className='w-4'
+                />
+            </motion.a>
         </motion.div>
     );
 };
