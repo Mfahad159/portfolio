@@ -38,7 +38,6 @@ const Services = ({ isDarkMode }) => {
             <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.3 }}
             transition={{ delay:0.9,duration:0.6 }}
             
             

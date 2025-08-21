@@ -89,33 +89,39 @@ export const assets = {
     right_arrow_bold_dark
 };
 
-export const workData = [ 
+export const workData = [
     {
-        title: 'Thinklytics - Property Market Analyser',
-        description: 'Data Analysis & Visualization (Python, Streamlit)',
-        bgImage: '/work-1.png',
+      title: 'Thinklytics - Property Market Analyser',
+      description: 'Data Analysis & Visualization tool for real estate using Python & Streamlit.',
+      tech: ['Python', 'Streamlit']
     },
     {
-        title: 'AI Habit Tracker',
-        description: 'Productivity App with Smart Reminders & Analytics',
-        bgImage: '/work-2.png',
+      title: 'AI Habit Tracker',
+      description: 'Productivity App with Smart Reminders & Analytics.',
+      tech: ['React', 'Node.js', 'MongoDB']
     },
     {
-        title: 'Trendy AI Articles Generator',
-        description: 'Full-Stack App with Llama-3-6B AI Integration',
-        bgImage: '/work-3.png',
+      title: 'Trendy AI Articles Generator',
+      description: 'Full-Stack App integrating Llama-3-6B for generating AI-based articles.',
+      tech: ['FastAPI', 'React', 'Llama-3-6B']
     },
     {
-        title: 'Student Management System',
-        description: 'Bash Command-Line Project for Records & CGPA',
-        bgImage: '/work-4.png',
+      title: 'Student Management System',
+      description: 'Command-line project for student records & CGPA calculation.',
+      tech: ['Bash']
     },
-    // {
-    //     title: 'Console Games & Management System',
-    //     description: 'C/C++ Based Projects (Problem-Solving Focus)',
-    //     bgImage: '/work-5.png',
-    // },
-]
+    {
+      title: 'Bit Bazar',
+      description: 'Full-stack application for managing an online game store with user authentication, cart, and admin controls.',
+      tech: ['FastAPI', 'HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Uvicorn']
+    },
+    {
+      title: 'GenStart - AI Startup Idea Validator',
+      description: 'AI-powered validator leveraging Claude 3.5 Sonnet & GPT-3.5 Turbo to generate business plans and market analysis.',
+      tech: ['React', 'FastAPI', 'Claude 3.5', 'GPT-3.5', 'TailwindCSS']
+    }
+  ]
+  
 export const serviceData = [
     {
         icon: assets.web_icon,
