@@ -53,7 +53,7 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
       />
       
       {/* Existing navbar content */}
-      <div className="w-11/12 fixed top-0 right-0 -z-10 translate-y-[-80%] dark:hidden relative h-[500px]">
+      <div className="w-11/12 fixed top-0 right-0 -z-10 translate-y-[-80%] dark:hidden h-[500px]">
   <Image
     src="/header-bg-color.png"
     alt="Header_bg"
