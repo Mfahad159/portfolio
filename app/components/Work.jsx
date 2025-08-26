@@ -46,7 +46,6 @@ const Work = ({ isDarkMode }) => {
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                viewport={{ once: true, amount: 0.3 }}
                 transition={{ delay: 0.9, duration: 0.6 }}
                 className='grid md:grid-cols-2 lg:grid-cols-3 gap-6 my-10'
             >

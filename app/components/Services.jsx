@@ -7,7 +7,6 @@ const Services = ({ isDarkMode }) => {
         <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 1 }}
         
         id='services' className='w-full px-[12%] py-5 scroll-mt-20'>
@@ -49,8 +48,8 @@ const Services = ({ isDarkMode }) => {
                         
                         key={index}
                             className={`border border-gray-400 rounded-lg px-8 py-12 cursor-pointer
-	                          transition-colors transition-transform duration-500
-	                        hover:shadow-md hover:shadow-black hover:bg-lighthover hover:-translate-y-1
+	                          transition-colors duration-500
+	                        hover:shadow-md hover:bg-lighthover hover:-translate-y-1
 	                       ${isDarkMode ? 'dark:hover:bg-darkhover/50 shadow-[0_8px_24px_rgba(255,255,255,0.08)]' : ''}`}>
                             <Image src={icon} alt='' className='w-15'></Image>
                             <h3 className={`text-lg my-4 text-gray-700 ${isDarkMode?"text-white":""}`}>{title}</h3>
