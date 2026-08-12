@@ -38,7 +38,7 @@ const Contact = () => {
         <SectionHeading
           eyebrow="Contact"
           title="Let's build something useful."
-          description="Open to internships, research, and technical collaborations."
+          description="Open to research, and technical collaborations."
         />
 
         <div className="mx-auto mb-12 flex max-w-2xl flex-wrap items-center justify-center gap-3">
