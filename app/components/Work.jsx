@@ -15,13 +15,13 @@ const Work = () => {
       viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 0.5 }}
       id="projects"
-      className="section-padding scroll-mt-24"
+      className="section-padding scroll-mt-28"
     >
       <Container>
         <SectionHeading
           eyebrow="Selected Work"
           title="Projects"
-          description="A few projects that reflect how I like to learn, build, and solve problems."
+          description="A few projects that show how I learn and build."
         />
 
         <div className="space-y-16 sm:space-y-20 md:space-y-28">

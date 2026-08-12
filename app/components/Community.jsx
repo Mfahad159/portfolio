@@ -13,7 +13,7 @@ const Community = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       id="community"
-      className="section-padding scroll-mt-24"
+      className="section-padding scroll-mt-28"
     >
       <Container>
         {/* Intro */}
@@ -44,21 +44,11 @@ const Community = () => {
           >
             Building with people, learning together, and sharing what I know.
           </motion.p>
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.15 }}
-            className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-[var(--muted)]"
-          >
-            Some of my most valuable learning has happened outside the editor — through developer
-            communities, team collaboration, events, and mentoring other students.
-          </motion.p>
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.15 }}
             className="mt-6 inline-flex items-center gap-2 text-sm text-[var(--muted)]"
           >
             <Image
@@ -114,12 +104,19 @@ const Community = () => {
               </div>
             </div>
             <p className="text-base leading-relaxed text-[var(--muted)]">
-              Alongside product development, I lead the technical side of GDG on Campus at FAST-NUCES, working across developer and design teams to plan and execute technical events and community initiatives.
+              Part of GDG on Campus CFD — contributing to technical events, community initiatives,
+              and team collaboration at FAST-NUCES.
             </p>
-            <p className="mt-4 text-sm leading-relaxed text-[var(--muted)]">
-              I’ve led technical execution for programs including Google’s Arc Program 2026 and AI Hackathon 2026, while also mentoring junior members in web development, developer tooling, and modern engineering practices.
-            </p>
-
+            <div className="mt-4 flex flex-wrap gap-2">
+              {['GDG on Campus', 'Technical events', 'Community building'].map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-3 py-1 text-xs text-[var(--muted)]"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
           </div>
         </motion.div>
 
@@ -145,12 +142,8 @@ const Community = () => {
               </span>
             </div>
             <p className="mt-5 text-base leading-relaxed text-[var(--muted)]">
-              One of the experiences I&apos;m especially glad to have been part of was mentoring 60+
-              students in AI and programming.
-            </p>
-            <p className="mt-4 text-base leading-relaxed text-[var(--muted)]">
-              Being able to explain technical ideas, answer questions, and help other students get
-              started has been a different kind of learning experience for me.
+              Mentored 60+ students in AI and programming — helping others get started while learning
+              to explain technical ideas clearly.
             </p>
           </div>
 

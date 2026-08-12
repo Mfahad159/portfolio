@@ -39,7 +39,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`scroll-smooth dark ${outfit.variable}`}>
+    <html lang="en" className={`scroll-smooth ${outfit.variable}`}>
       <body className={`${outfit.className} antialiased overflow-x-hidden`}>{children}</body>
     </html>
   );

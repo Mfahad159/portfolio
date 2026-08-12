@@ -61,6 +61,24 @@ body {
   padding-block: var(--section-gap);
 }
 
+.hero-section {
+  /* fixed header height + comfortable gap below it */
+  padding-top: calc(4.25rem + 2.5rem);
+  padding-bottom: var(--section-gap);
+}
+
+@media (min-width: 640px) {
+  .hero-section {
+    padding-top: calc(4.5rem + 2.75rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-section {
+    padding-top: calc(4.25rem + 3rem);
+  }
+}
+
 .card-surface {
   border: 1px solid var(--border);
   border-radius: var(--radius-card);

@@ -12,19 +12,13 @@ const Skills = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       id="skills"
-      className="section-padding scroll-mt-24"
+      className="section-padding scroll-mt-28"
     >
       <Container>
         <SectionHeading
           eyebrow="Skills"
           title="Skills & Tools"
-          description={
-            <>
-              The <strong className="font-medium text-foreground">technologies</strong> and{' '}
-              <strong className="font-medium text-foreground">tools</strong> I use to build products
-              and keep learning.
-            </>
-          }
+          description="Technologies and tools I build with."
         />
 
         <motion.div

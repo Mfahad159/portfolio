@@ -38,17 +38,21 @@ const TimelineItem = ({ item, index, isLast }) => {
       <div className="min-w-0 flex-1 border-b border-[var(--border)] pb-12 last:border-b-0 last:pb-0">
         <div className="mb-3 flex flex-wrap items-start justify-between gap-3">
           <div>
+            <div className="mb-1 flex flex-wrap items-center gap-2">
+              {item.date && (
+                <span className="rounded-full bg-[var(--accent-muted)] px-2.5 py-0.5 font-mono text-[11px] tracking-wide text-[var(--accent)]">
+                  {item.date}
+                </span>
+              )}
+            </div>
             <h3 className="text-xl font-semibold md:text-2xl">{item.title}</h3>
             <p className="mt-1 text-sm text-[var(--accent)]">{item.organization}</p>
-            {item.date && (
-              <p className="mt-1 font-mono text-xs tracking-wide text-[var(--muted)]">{item.date}</p>
-            )}
           </div>
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[var(--accent-muted)] text-[var(--accent)]">
             {icons[item.icon] || icons.development}
           </div>
         </div>
-        <p className="max-w-2xl text-base leading-relaxed text-[var(--muted)]">{item.description}</p>
+        <p className="max-w-2xl text-sm leading-relaxed text-[var(--muted)] sm:text-base">{item.description}</p>
         <div className="mt-4 flex flex-wrap gap-2">
           {(item.tags || [item.category]).map((tag) => (
             <TechChip key={tag} label={tag} size="sm" />

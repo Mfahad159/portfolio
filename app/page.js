@@ -15,11 +15,11 @@ import SectionDivider from './components/ui/SectionDivider';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const stored = localStorage.theme;
-    if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (stored === 'dark') {
       setIsDarkMode(true);
     } else if (stored === 'light') {
       setIsDarkMode(false);

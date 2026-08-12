@@ -5,6 +5,12 @@ import Image from 'next/image';
 import { assets } from '@/assets/assets';
 import Container from './ui/Container';
 
+const focusAreas = [
+  { label: 'Full-stack products', detail: 'React · Next.js · APIs' },
+  { label: 'AI & research', detail: 'LLMs · VLMs · OCR' },
+  { label: 'Community', detail: 'GDG · mentoring · events' },
+];
+
 const About = () => {
   return (
     <motion.section
@@ -12,7 +18,7 @@ const About = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       id="about"
-      className="section-padding scroll-mt-24"
+      className="section-padding scroll-mt-28"
     >
       <Container>
         <div className="grid items-start gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
@@ -55,20 +61,24 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="space-y-4 text-base leading-relaxed text-[var(--muted)]"
+              className="space-y-6"
             >
-              <p>
-                I started by wanting to understand how things worked. Eventually, I wanted
-                to build them myself.
+              <p className="max-w-xl text-base leading-relaxed text-[var(--muted)]">
+                CS student at FAST-NUCES. I build full-stack and AI products — and learn by shipping
+                real work, not just studying concepts.
               </p>
-              <p>
-                That journey has taken me through full-stack products, AI, LLMs, VLMs,
-                and OCR, always learning by building something real.
-              </p>
-              <p>
-                Now I’m trying to do the same with people: build, share, mentor, and learn
-                together.
-              </p>
+
+              <ul className="grid gap-3 sm:grid-cols-3">
+                {focusAreas.map((area) => (
+                  <li
+                    key={area.label}
+                    className="rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3"
+                  >
+                    <p className="text-sm font-medium">{area.label}</p>
+                    <p className="mt-1 text-xs text-[var(--muted)]">{area.detail}</p>
+                  </li>
+                ))}
+              </ul>
             </motion.div>
           </div>
         </div>

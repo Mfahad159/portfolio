@@ -32,13 +32,13 @@ const Contact = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       id="contact"
-      className="section-padding scroll-mt-24"
+      className="section-padding scroll-mt-28"
     >
       <Container>
         <SectionHeading
           eyebrow="Contact"
           title="Let's build something useful."
-          description="I'm open to engineering internships, research collaborations, and interesting technical projects."
+          description="Open to internships, research, and technical collaborations."
         />
 
         <div className="mx-auto mb-12 flex max-w-2xl flex-wrap items-center justify-center gap-3">

@@ -26,7 +26,7 @@ export const featuredProjects = [
     title: 'CertifyFlow',
     category: 'Product / SaaS',
     description:
-      'A web platform for generating and managing certificates at scale, focused on bulk certificate creation and distribution.',
+      'Bulk certificate generation and management at scale.',
     problem: 'Creating certificates manually becomes slow and inconsistent when working at scale.',
     solution: 'A web platform to generate and manage certificates in bulk.',
     contribution: 'Built the platform with Next.js, Supabase, and TypeScript.',
@@ -41,7 +41,7 @@ export const featuredProjects = [
     title: 'Thinklytics',
     category: 'Data / AI',
     description:
-      'An interactive application for exploring real-estate data, trends, and market insights.',
+      'Interactive real-estate data exploration with Python and Streamlit.',
     problem: 'Property data is easier to understand when it can be explored visually.',
     solution: 'A Streamlit app for viewing and analyzing real-estate market data.',
     contribution: 'Built the data views and visualizations with Python and Streamlit.',
@@ -58,7 +58,7 @@ export const featuredProjects = [
     title: 'AI Content Idea Generator',
     category: 'AI / Hackathon',
     description:
-      'An AI-powered app that generates content ideas using LLM APIs through a full-stack web interface.',
+      'Full-stack app that generates content ideas using LLM APIs.',
     problem: 'Coming up with content ideas regularly takes time and structure.',
     solution: 'A full-stack app that sends prompts to LLM APIs and returns organized content ideas.',
     contribution: 'Built the React frontend, FastAPI backend, and LLM API integration.',
@@ -73,7 +73,7 @@ export const featuredProjects = [
     title: 'PeakPath AI',
     category: 'AI / Product',
     description:
-      'An AI-powered scholarship discovery app that helps students search for relevant opportunities with profile-based matching and AI-assisted workflows.',
+      'AI-powered scholarship discovery with profile-based matching.',
     problem: 'Scholarship information is often spread across different sources and hard to compare.',
     solution: 'A web app for searching scholarships and getting AI-assisted recommendations.',
     contribution: 'Built the product, AI search workflows, and web interface.',
@@ -149,7 +149,7 @@ export const experienceData = [
     organization: 'Personal & team projects',
     date: 'Aug 2024 — Present',
     description:
-      'Hands-on product and full-stack development — building web applications, APIs, database-backed features, and AI integrations while continuously learning through experimentation.',
+      'Building web apps, APIs, databases, and AI features across personal and team projects.',
     tags: ['React', 'Next.js', 'Python', 'FastAPI', 'AI'],
     category: 'Development',
     icon: 'development',
@@ -160,7 +160,7 @@ export const experienceData = [
     organization: 'VLMs, OCR & AI',
     date: 'Nov 2025 — Present',
     description:
-      'Actively exploring modern AI research technologies — working with vision-language models, OCR systems, and LLM experimentation through hands-on dataset and research workflows.',
+      'Exploring VLMs, OCR systems, and LLM workflows through hands-on research and dataset work.',
     tags: ['VLMs', 'OCR', 'Qwen', 'DeepSeek', 'LLM APIs'],
     category: 'Research',
     icon: 'research',

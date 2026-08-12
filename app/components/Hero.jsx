@@ -15,11 +15,11 @@ const Hero = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section id="top" className="relative section-padding pt-28 md:pt-32">
+    <section id="top" className="hero-section relative">
       {!isMobile && <DotGrid />}
 
       <Container className="relative">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
+        <div className="grid items-start gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div className="text-center lg:text-left">
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
@@ -55,6 +55,21 @@ const Hero = () => {
               <br />
               <span className="text-gradient-accent">building products across software & AI.</span>
             </motion.h1>
+
+            <motion.div
+              {...heroSequence.description}
+              className="mx-auto mt-6 flex max-w-md flex-wrap justify-center gap-2 lg:mx-0 lg:justify-start"
+            >
+              {['Full-stack', 'AI & LLMs', 'FAST-NUCES'].map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-3 py-1 text-xs font-medium text-[var(--muted)] sm:text-sm"
+                >
+                  {item}
+                </span>
+              ))}
+            </motion.div>
+
             <motion.div
               {...heroSequence.cta}
               className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap lg:justify-start"

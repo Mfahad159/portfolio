@@ -6,6 +6,8 @@ import { useActiveSection } from '@/hooks/useActiveSection';
 import Button from './ui/Button';
 import { CloseIcon, MenuIcon, MoonIcon, SunIcon } from './ui/ThemeIcons';
 
+const iconClass = 'h-5 w-5 md:h-[18px] md:w-[18px]';
+
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const [isScroll, setIsScroll] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,37 +34,39 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
           isScroll
-            ? 'border-b border-[var(--border)] bg-[var(--background)]/80 backdrop-blur-md'
+            ? 'border-b border-[var(--border)] bg-[var(--background)]/85 backdrop-blur-md'
             : 'border-b border-transparent bg-transparent'
         }`}
       >
-        <nav className="section-container flex h-14 items-center justify-between md:h-16">
+        <nav className="section-container flex h-[4.25rem] items-center justify-between gap-3 sm:h-[4.5rem] md:h-16 lg:h-[4.25rem]">
           <a
             href="#top"
             aria-label="Home"
-            className="group flex cursor-pointer items-center gap-1"
+            className="group flex shrink-0 cursor-pointer items-center gap-0.5"
           >
-            <span className="text-lg font-semibold tracking-tight md:text-xl">Fahad</span>
-            <span className="text-[var(--accent)] transition-transform duration-200 group-hover:scale-110">
+            <span className="text-[1.35rem] font-bold tracking-tight sm:text-2xl md:text-xl lg:text-[1.35rem]">
+              Fahad
+            </span>
+            <span className="text-xl font-bold text-[var(--accent)] transition-transform duration-200 group-hover:scale-110 md:text-lg lg:text-xl">
               .
             </span>
           </a>
 
-          <ul className="hidden items-center gap-1 lg:flex">
+          <ul className="hidden items-center gap-0.5 lg:flex">
             {navLinks.slice(1).map((link) => {
               const isActive = activeSection === link.id;
               return (
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className={`group relative cursor-pointer px-3 py-2 text-sm ${
+                    className={`group relative cursor-pointer px-3.5 py-2.5 text-[15px] ${
                       isActive ? 'text-[var(--accent)]' : 'text-[var(--muted)] hover:text-[var(--accent)]'
                     }`}
                   >
                     {link.label}
                     <span
                       aria-hidden="true"
-                      className={`absolute bottom-0 left-3 right-3 h-px origin-left bg-[var(--accent)] transition-transform duration-300 ease-out ${
+                      className={`absolute bottom-1 left-3.5 right-3.5 h-px origin-left bg-[var(--accent)] transition-transform duration-300 ease-out ${
                         isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
                       }`}
                     />
@@ -72,30 +76,30 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             })}
           </ul>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2.5 sm:gap-3">
             <button
               type="button"
               onClick={() => setIsDarkMode((prev) => !prev)}
               aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
-              className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-[var(--border)] text-[var(--foreground)] transition-colors hover:border-[var(--border-hover)] hover:text-[var(--accent)]"
+              className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-full border border-[var(--border)] text-[var(--foreground)] transition-colors hover:border-[var(--border-hover)] hover:text-[var(--accent)] md:h-10 md:w-10"
             >
-              {isDarkMode ? <SunIcon /> : <MoonIcon />}
+              {isDarkMode ? <SunIcon className={iconClass} /> : <MoonIcon className={iconClass} />}
             </button>
             <Button
               href={siteLinks.resume}
               download={siteLinks.resumeFileName}
               variant="secondary"
-              className="hidden !px-4 !py-2 text-xs md:flex"
+              className="!px-4 !py-2.5 !text-sm sm:!px-5 md:!px-4 md:!py-2 md:!text-sm"
             >
               Resume
             </Button>
             <button
               type="button"
-              className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-[var(--border)] text-[var(--foreground)] transition-colors hover:border-[var(--border-hover)] hover:text-[var(--accent)] lg:hidden"
+              className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-full border border-[var(--border)] text-[var(--foreground)] transition-colors hover:border-[var(--border-hover)] hover:text-[var(--accent)] lg:hidden"
               onClick={() => setMenuOpen(true)}
               aria-label="Open menu"
             >
-              <MenuIcon />
+              <MenuIcon className={iconClass} />
             </button>
           </div>
         </nav>
@@ -111,24 +115,24 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
       <div
         ref={sideMenuRef}
-        className={`fixed right-0 top-0 z-[70] flex h-full w-72 flex-col gap-1 border-l border-[var(--border)] bg-[var(--background)] p-6 pt-20 transition-transform duration-300 ease-out lg:hidden ${
+        className={`fixed right-0 top-0 z-[70] flex h-full w-[min(100vw-3rem,20rem)] flex-col gap-1 border-l border-[var(--border)] bg-[var(--background)] p-6 pt-24 transition-transform duration-300 ease-out lg:hidden ${
           menuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         <button
           type="button"
-          className="absolute right-5 top-5 flex h-8 w-8 cursor-pointer items-center justify-center text-[var(--foreground)] transition-colors hover:text-[var(--accent)]"
+          className="absolute right-5 top-6 flex h-11 w-11 cursor-pointer items-center justify-center text-[var(--foreground)] transition-colors hover:text-[var(--accent)]"
           onClick={closeMenu}
           aria-label="Close menu"
         >
-          <CloseIcon />
+          <CloseIcon className="h-5 w-5" />
         </button>
         {navLinks.map((link) => (
           <a
             key={link.href}
             href={link.href}
             onClick={closeMenu}
-            className={`cursor-pointer rounded-lg px-3 py-2.5 text-base transition-colors ${
+            className={`cursor-pointer rounded-lg px-4 py-3 text-base transition-colors ${
               activeSection === link.id
                 ? 'bg-[var(--accent-muted)] text-[var(--accent)]'
                 : 'text-[var(--muted)] hover:bg-[var(--surface)] hover:text-[var(--accent)]'
@@ -137,11 +141,6 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             {link.label}
           </a>
         ))}
-        <div className="mt-4 border-t border-[var(--border)] pt-4">
-          <Button href={siteLinks.resume} download={siteLinks.resumeFileName} variant="primary" className="w-full">
-            Resume
-          </Button>
-        </div>
       </div>
     </>
   );

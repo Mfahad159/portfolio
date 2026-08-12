@@ -13,13 +13,13 @@ const Experience = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       id="experience"
-      className="section-padding scroll-mt-24"
+      className="section-padding scroll-mt-28"
     >
       <Container>
         <SectionHeading
           eyebrow="Experience"
           title="Experience"
-          description="Research and hands-on software development from my time as a CS student."
+          description="Software development and AI research — in practice."
         />
 
         <div className="mx-auto max-w-3xl md:max-w-4xl">
