@@ -177,7 +177,7 @@ export const skills = [
   'Tailwind CSS',
   'PostgreSQL',
   'Supabase',
-  'Prisma',
+  'MongoDB',
   'Firebase',
   'VLMs',
   'LLM APIs',
