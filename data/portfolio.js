@@ -162,7 +162,7 @@ export const experienceData = [
     number: '01',
     title: 'Software & AI Development',
     organization: 'Personal & team projects',
-    date: 'Aug 2024 — Present',
+    date: 'Aug 2023 — Present',
     description:
       'Building web apps, APIs, databases, and AI features across personal and team projects.',
     tags: ['React', 'Next.js', 'Python', 'FastAPI', 'AI'],
@@ -194,7 +194,7 @@ export const experienceData = [
     number: '03',
     title: 'Freelance AI & Full-Stack Developer',
     organization: 'Fiverr & freelance clients',
-    date: '2023 — Present',
+    date: 'Aug 2023 — Present',
     description:
       'Delivering production-ready solutions for clients through platforms like Fiverr — full-stack web development, AI and GenAI integration, APIs, and backend systems with modern web technologies.',
     tags: [
