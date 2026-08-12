@@ -17,7 +17,7 @@ const MoreProjectsList = ({ projects }) => {
           onClick={() => setOpen((prev) => !prev)}
           aria-expanded={open}
           aria-controls="more-projects-panel"
-          className="group inline-flex cursor-pointer items-center gap-2 text-sm font-medium text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
+          className="group inline-flex cursor-pointer items-center gap-2 text-sm font-medium text-[var(--muted)] transition-colors hover:text-[var(--accent-alt)]"
         >
           See more projects
           <span
@@ -68,7 +68,7 @@ const MoreProjectsList = ({ projects }) => {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="shrink-0 cursor-pointer text-sm font-medium text-[var(--accent)] transition-colors hover:text-[var(--accent-hover)]"
+                        className="shrink-0 cursor-pointer text-sm font-medium text-[var(--accent-alt)] transition-colors hover:text-[var(--accent-alt-hover)]"
                       >
                         View Code ↗
                       </a>

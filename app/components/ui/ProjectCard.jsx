@@ -54,7 +54,7 @@ const ProjectCard = ({ project, onSelect, className = '', priority = false }) =>
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="group/link inline-flex items-center gap-1.5 rounded-full border border-[var(--border)] px-4 py-2 text-sm font-medium transition-colors hover:border-[var(--border-hover)] hover:bg-[var(--accent-muted)]"
+              className="group/link inline-flex items-center gap-1.5 rounded-full border border-[var(--border)] px-4 py-2 text-sm font-medium transition-colors hover:border-[var(--border-hover)] hover:bg-[var(--accent-alt-muted)]"
             >
               GitHub
               <span className="transition-transform duration-200 group-hover/link:translate-x-0.5">→</span>
@@ -66,7 +66,7 @@ const ProjectCard = ({ project, onSelect, className = '', priority = false }) =>
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="inline-flex items-center gap-1.5 rounded-full bg-[var(--accent)] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[var(--accent-hover)]"
+              className="inline-flex items-center gap-1.5 rounded-full bg-[var(--accent)] px-4 py-2 text-sm font-medium text-[var(--accent-foreground)] transition-colors hover:bg-[var(--accent-hover)]"
             >
               Live Demo
             </a>

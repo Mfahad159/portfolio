@@ -62,7 +62,7 @@ const Contact = () => {
           <div className="mb-4 grid gap-4 sm:grid-cols-2">
             <input
               name="name"
-              className="rounded-lg border border-[var(--border)] bg-[var(--surface)] p-3 text-sm outline-none transition-colors focus:border-[var(--accent)]/50"
+              className="rounded-lg border border-[var(--border)] bg-[var(--surface)] p-3 text-sm outline-none transition-colors focus:border-[var(--accent-alt)]/50"
               type="text"
               placeholder="Your name"
               required
@@ -70,7 +70,7 @@ const Contact = () => {
             />
             <input
               name="email"
-              className="rounded-lg border border-[var(--border)] bg-[var(--surface)] p-3 text-sm outline-none transition-colors focus:border-[var(--accent)]/50"
+              className="rounded-lg border border-[var(--border)] bg-[var(--surface)] p-3 text-sm outline-none transition-colors focus:border-[var(--accent-alt)]/50"
               type="email"
               placeholder="Your email"
               required
@@ -79,7 +79,7 @@ const Contact = () => {
           </div>
           <textarea
             name="message"
-            className="mb-5 w-full rounded-lg border border-[var(--border)] bg-[var(--surface)] p-4 text-sm outline-none transition-colors focus:border-[var(--accent)]/50"
+            className="mb-5 w-full rounded-lg border border-[var(--border)] bg-[var(--surface)] p-4 text-sm outline-none transition-colors focus:border-[var(--accent-alt)]/50"
             rows="5"
             placeholder="Your message"
             required

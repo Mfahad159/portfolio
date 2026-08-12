@@ -34,7 +34,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
           isScroll
-            ? 'border-b border-[var(--border)] bg-[var(--background)]/85 backdrop-blur-md'
+            ? 'border-b border-[var(--border)] bg-[var(--bg-secondary)]/85 backdrop-blur-md'
             : 'border-b border-transparent bg-transparent'
         }`}
       >
@@ -60,7 +60,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
                   <a
                     href={link.href}
                     className={`group relative cursor-pointer px-3.5 py-2.5 text-[15px] ${
-                      isActive ? 'text-[var(--accent)]' : 'text-[var(--muted)] hover:text-[var(--accent)]'
+                      isActive ? 'text-[var(--accent)]' : 'text-[var(--muted)] hover:text-[var(--accent-alt)]'
                     }`}
                   >
                     {link.label}
@@ -81,7 +81,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               type="button"
               onClick={() => setIsDarkMode((prev) => !prev)}
               aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
-              className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-full border border-[var(--border)] text-[var(--foreground)] transition-colors hover:border-[var(--border-hover)] hover:text-[var(--accent)] md:h-10 md:w-10"
+              className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-full border border-[var(--border)] text-[var(--foreground)] transition-colors hover:border-[var(--border-hover)] hover:text-[var(--accent-alt)] md:h-10 md:w-10"
             >
               {isDarkMode ? <SunIcon className={iconClass} /> : <MoonIcon className={iconClass} />}
             </button>
@@ -95,7 +95,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             </Button>
             <button
               type="button"
-              className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-full border border-[var(--border)] text-[var(--foreground)] transition-colors hover:border-[var(--border-hover)] hover:text-[var(--accent)] lg:hidden"
+              className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-full border border-[var(--border)] text-[var(--foreground)] transition-colors hover:border-[var(--border-hover)] hover:text-[var(--accent-alt)] lg:hidden"
               onClick={() => setMenuOpen(true)}
               aria-label="Open menu"
             >
@@ -115,13 +115,13 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
       <div
         ref={sideMenuRef}
-        className={`fixed right-0 top-0 z-[70] flex h-full w-[min(100vw-3rem,20rem)] flex-col gap-1 border-l border-[var(--border)] bg-[var(--background)] p-6 pt-24 transition-transform duration-300 ease-out lg:hidden ${
+        className={`fixed right-0 top-0 z-[70] flex h-full w-[min(100vw-3rem,20rem)] flex-col gap-1 border-l border-[var(--border)] bg-[var(--bg-secondary)] p-6 pt-24 transition-transform duration-300 ease-out lg:hidden ${
           menuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         <button
           type="button"
-          className="absolute right-5 top-6 flex h-11 w-11 cursor-pointer items-center justify-center text-[var(--foreground)] transition-colors hover:text-[var(--accent)]"
+          className="absolute right-5 top-6 flex h-11 w-11 cursor-pointer items-center justify-center text-[var(--foreground)] transition-colors hover:text-[var(--accent-alt)]"
           onClick={closeMenu}
           aria-label="Close menu"
         >
@@ -135,7 +135,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             className={`cursor-pointer rounded-lg px-4 py-3 text-base transition-colors ${
               activeSection === link.id
                 ? 'bg-[var(--accent-muted)] text-[var(--accent)]'
-                : 'text-[var(--muted)] hover:bg-[var(--surface)] hover:text-[var(--accent)]'
+                : 'text-[var(--muted)] hover:bg-[var(--surface)] hover:text-[var(--accent-alt)]'
             }`}
           >
             {link.label}

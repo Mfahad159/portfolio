@@ -22,7 +22,7 @@ const CoreStackCard = ({ item, index }) => {
       className="card-surface group flex flex-col gap-3 p-4 md:p-5"
     >
       <div className="flex items-center justify-between">
-        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--accent-muted)] text-[var(--accent)] transition-colors group-hover:bg-[var(--accent)] group-hover:text-white">
+        <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--accent-muted)] text-[var(--accent)] transition-colors group-hover:bg-[var(--accent)] group-hover:text-[var(--accent-foreground)]">
           {Icon && <Icon className="h-5 w-5" />}
         </div>
         <span className="text-[10px] font-semibold uppercase tracking-widest text-[var(--muted)]">

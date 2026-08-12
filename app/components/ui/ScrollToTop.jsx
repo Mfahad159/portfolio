@@ -28,7 +28,7 @@ const ScrollToTop = () => {
           transition={{ duration: 0.25 }}
           onClick={scrollToTop}
           aria-label="Scroll to top"
-          className="fixed bottom-8 right-8 z-40 flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--background)]/70 text-[var(--foreground)] shadow-lg backdrop-blur-md transition-colors hover:border-[var(--border-hover)] hover:bg-[var(--background)]/90 hover:text-[var(--accent)]"
+          className="fixed bottom-8 right-8 z-40 flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--background)]/70 text-[var(--foreground)] shadow-lg backdrop-blur-md transition-colors hover:border-[var(--border-hover)] hover:bg-[var(--background)]/90 hover:text-[var(--accent-alt)]"
         >
           <svg
             width="18"

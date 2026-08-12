@@ -100,7 +100,7 @@ const Community = () => {
               />
               <div>
                 <h3 className="text-xl font-semibold">GDG on Campus CFD</h3>
-                <p className="text-sm text-[var(--accent)]">Community Building</p>
+                <p className="text-sm text-[var(--accent-alt)]">Community Building</p>
               </div>
             </div>
             <p className="text-base leading-relaxed text-[var(--muted)]">

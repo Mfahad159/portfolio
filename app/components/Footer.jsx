@@ -17,7 +17,7 @@ const Footer = () => {
                 href={link.href}
                 target={link.label !== 'Email' ? '_blank' : undefined}
                 rel={link.label !== 'Email' ? 'noopener noreferrer' : undefined}
-                className="group cursor-pointer text-sm text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
+                className="group cursor-pointer text-sm text-[var(--muted)] transition-colors hover:text-[var(--accent-alt)]"
               >
                 {link.label}
                 <span className="ml-0.5 inline-block transition-transform duration-200 group-hover:translate-x-0.5">

@@ -38,10 +38,10 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const themeScript = `(function(){try{var t=localStorage.theme;if(t==='dark')document.documentElement.classList.add('dark');else document.documentElement.classList.remove('dark')}catch(e){}})()`;
+  const themeScript = `(function(){try{var t=localStorage.theme;if(t==='light')document.documentElement.classList.remove('dark');else document.documentElement.classList.add('dark')}catch(e){}})()`;
 
   return (
-    <html lang="en" className={`scroll-smooth ${outfit.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`scroll-smooth dark ${outfit.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>

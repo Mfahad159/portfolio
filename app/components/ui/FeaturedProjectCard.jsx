@@ -95,7 +95,7 @@ const FeaturedProjectCard = ({ project, priority = false, index = 0, reversed = 
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex cursor-pointer items-center gap-1.5 text-sm font-medium text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
+              className="inline-flex cursor-pointer items-center gap-1.5 text-sm font-medium text-[var(--muted)] transition-colors hover:text-[var(--accent-alt)]"
             >
               View code →
             </a>
@@ -121,7 +121,7 @@ const FeaturedProjectCard = ({ project, priority = false, index = 0, reversed = 
             whileInView={{ filter: 'blur(0px)', opacity: 1, scale: 1 }}
             viewport={{ once: true, amount: 0.25 }}
             transition={revealTransition}
-            className={`relative overflow-hidden bg-[#0a0012] ${aspectClass}`}
+            className={`relative overflow-hidden bg-[var(--bg-primary)] ${aspectClass}`}
           >
             <Image
               src={project.image}

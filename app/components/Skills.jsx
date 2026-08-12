@@ -35,7 +35,7 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.02 }}
-              className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-4 py-2 text-sm text-[var(--muted)] transition-colors hover:border-[var(--border-hover)] hover:text-foreground"
+              className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-4 py-2 text-sm text-[var(--muted)] transition-colors hover:border-[var(--border-hover)] hover:text-[var(--accent-alt)]"
             >
               {skill}
             </motion.span>

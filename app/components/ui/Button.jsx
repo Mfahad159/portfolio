@@ -16,10 +16,10 @@ const ArrowIcon = ({ className = '' }) => (
 
 const variants = {
   primary:
-    'bg-[var(--accent)] text-white border border-transparent hover:bg-[var(--accent-hover)] shadow-[0_0_0_0_rgba(147,51,234,0)] hover:shadow-[0_8px_30px_-12px_rgba(147,51,234,0.55)]',
+    'bg-[var(--accent)] text-[var(--accent-foreground)] border border-transparent hover:bg-[var(--accent-hover)] btn-primary-shadow',
   secondary:
-    'border border-[var(--border)] bg-transparent text-foreground hover:border-[var(--accent)]/50 hover:bg-[var(--accent-muted)]',
-  ghost: 'text-foreground/70 hover:text-[var(--accent)] px-2 py-1',
+    'border border-[var(--border)] bg-transparent text-foreground hover:border-[var(--accent-alt)]/50 hover:bg-[var(--accent-alt-muted)]',
+  ghost: 'text-foreground/70 hover:text-[var(--accent-alt)] px-2 py-1',
 };
 
 async function downloadFile(url, filename) {

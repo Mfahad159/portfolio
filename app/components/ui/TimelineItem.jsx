@@ -30,7 +30,7 @@ const TimelineItem = ({ item, index, isLast }) => {
       )}
 
       <div className="relative z-10 shrink-0 pt-1">
-        <div className="flex h-8 w-8 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--background)] font-mono text-[10px] tracking-wider text-[var(--accent)] transition-colors duration-300 group-hover:border-[var(--accent)] md:h-10 md:w-10 md:text-xs">
+        <div className="flex h-8 w-8 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--background)] font-mono text-[10px] tracking-wider text-[var(--accent)] transition-colors duration-300 group-hover:border-[var(--accent-alt)] md:h-10 md:w-10 md:text-xs">
           {item.number || String(index + 1).padStart(2, '0')}
         </div>
       </div>
@@ -46,7 +46,7 @@ const TimelineItem = ({ item, index, isLast }) => {
               )}
             </div>
             <h3 className="text-xl font-semibold md:text-2xl">{item.title}</h3>
-            <p className="mt-1 text-sm text-[var(--accent)]">{item.organization}</p>
+            <p className="mt-1 text-sm text-[var(--accent-alt)]">{item.organization}</p>
           </div>
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[var(--accent-muted)] text-[var(--accent)]">
             {icons[item.icon] || icons.development}

@@ -13,7 +13,7 @@ const ProjectImage = ({
 
   return (
     <div
-      className={`relative h-full w-full overflow-hidden bg-[#0a0012] ${className}`}
+      className={`relative h-full w-full overflow-hidden bg-[var(--bg-primary)] ${className}`}
     >
       <Image
         src={src}
