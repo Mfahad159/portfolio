@@ -165,6 +165,17 @@ export const experienceData = [
     category: 'Research',
     icon: 'research',
   },
+  {
+    number: '03',
+    title: 'Freelance AI & Full-Stack Developer',
+    organization: 'Fiverr & freelance clients',
+    date: '2023 — Present',
+    description:
+      'Delivering production-ready solutions for clients through platforms like Fiverr — full-stack web development, AI and GenAI integration, APIs, and backend systems with modern web technologies.',
+    tags: ['Full-Stack', 'AI / GenAI', 'APIs', 'React', 'FastAPI'],
+    category: 'Freelance',
+    icon: 'development',
+  },
 ];
 
 export const skills = [
