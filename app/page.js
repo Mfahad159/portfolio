@@ -15,7 +15,7 @@ import SectionDivider from './components/ui/SectionDivider';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     const stored = localStorage.theme;
