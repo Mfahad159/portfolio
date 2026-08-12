@@ -63,11 +63,18 @@ const About = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="space-y-6"
             >
-              <p className="max-w-xl text-base leading-relaxed text-[var(--muted)]">
-                CS student at FAST-NUCES. I build full-stack and AI products — and learn by shipping
-                real work, not just studying concepts.
+              <p>
+                I started by wanting to understand how things worked. Eventually, I wanted
+                to build them myself.
               </p>
-
+              <p>
+                That journey has taken me through full-stack products, AI, LLMs, VLMs,
+                and OCR,always learning by building something real.
+              </p>
+              <p>
+                Now I’m trying to do the same with people: build, share, mentor, and learn
+                together.
+              </p>
               <ul className="grid gap-3 sm:grid-cols-3">
                 {focusAreas.map((area) => (
                   <li

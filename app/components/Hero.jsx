@@ -5,18 +5,15 @@ import Image from 'next/image';
 import { assets } from '@/assets/assets';
 import { siteLinks } from '@/data/portfolio';
 import { heroSequence } from '@/lib/motion';
-import { useIsMobile } from '@/hooks/useActiveSection';
 import Button from './ui/Button';
 import Container from './ui/Container';
 import DotGrid from './ui/DotGrid';
 import SystemCard from './ui/SystemCard';
 
 const Hero = () => {
-  const isMobile = useIsMobile();
-
   return (
     <section id="top" className="hero-section relative">
-      {!isMobile && <DotGrid />}
+      <DotGrid />
 
       <Container className="relative">
         <div className="grid items-start gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">

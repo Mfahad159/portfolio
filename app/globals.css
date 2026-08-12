@@ -141,8 +141,7 @@ html {
 
 @media (max-width: 767px) {
   .dot-grid {
-    opacity: 0.12 !important;
-    mask-image: radial-gradient(ellipse 80% 50% at 50% 30%, black 10%, transparent 70%);
+    mask-image: radial-gradient(ellipse 90% 55% at 50% 28%, black 18%, transparent 75%);
   }
 }
 
