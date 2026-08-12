@@ -104,8 +104,8 @@ const Community = () => {
               </div>
             </div>
             <p className="text-base leading-relaxed text-[var(--muted)]">
-              Part of GDG on Campus CFD — contributing to technical events, community initiatives,
-              and team collaboration at FAST-NUCES.
+              Leading the technical team at GDG on Campus CFD, I work across developer and design teams to
+              execute technical events, community initiatives, and large-scale programs at FAST-NUCES.
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               {['GDG on Campus', 'Technical events', 'Community building'].map((tag) => (

@@ -160,38 +160,6 @@ export const communityAssets = {
 export const experienceData = [
   {
     number: '01',
-    title: 'Software & AI Development',
-    organization: 'Personal & team projects',
-    date: 'Aug 2023 — Present',
-    description:
-      'Building web apps, APIs, databases, and AI features across personal and team projects.',
-    tags: ['React', 'Next.js', 'Python', 'FastAPI', 'AI'],
-    category: 'Development',
-    icon: 'development',
-  },
-  {
-    number: '02',
-    title: 'Research Assistant',
-    organization: 'VLMs, OCR & AI',
-    date: 'Nov 2025 — Present',
-    description:
-      'Exploring VLMs, OCR systems, and LLM workflows through hands-on research and dataset work.',
-    tags: [
-      'NumPy',
-      'Jupyter Notebook',
-      'Qwen-VL / Qwen2.5-VL',
-      'DeepSeek',
-      'OCR Pipelines',
-      'Prompt Engineering',
-      'Model Inference',
-      'Dataset Preparation',
-      'Image Preprocessing',
-    ],
-    category: 'Research',
-    icon: 'research',
-  },
-  {
-    number: '03',
     title: 'Freelance AI & Full-Stack Developer',
     organization: 'Fiverr & freelance clients',
     date: 'Aug 2023 — Present',
@@ -210,6 +178,58 @@ export const experienceData = [
     ],
     category: 'Freelance',
     icon: 'development',
+  },
+  {
+    number: '02',
+    title: 'Software & AI Development',
+    organization: 'Personal & team projects',
+    date: 'Aug 2023 — Present',
+    description:
+      'Building web apps, APIs, databases, and AI features across personal and team projects.',
+    tags: ['React', 'Next.js', 'Python', 'FastAPI', 'AI'],
+    category: 'Development',
+    icon: 'development',
+  },
+  {
+    number: '03',
+    title: 'Product Field Testing Intern',
+    organization: 'insite.life · Remote',
+    date: 'Jun 2025 — Aug 2025',
+    description:
+      'Field testing product features and user flows for alpha and beta releases — generating unified reports, validating usability, and collaborating with product and community teams to refine use cases.',
+    tags: [
+      'Platform Evaluation',
+      'Alpha / Beta Testing',
+      'User Flow Testing',
+      'Report Analysis',
+      'SDLC',
+      'Software Design & Analysis',
+      'Team Collaboration',
+      'Product Testing',
+    ],
+    category: 'Internship',
+    icon: 'development',
+  },
+  {
+    number: '04',
+    title: 'Research Assistant',
+    organization: 'VLMs, OCR & AI',
+    date: 'Nov 2025 — Present',
+    description:
+      'Exploring VLMs, OCR systems, and LLM workflows through hands-on research and dataset work.',
+    tags: [
+      'NumPy',
+      'Jupyter Notebook',
+      'Qwen-VL / Qwen2.5-VL',
+      'DeepSeek',
+      'OCR Pipelines',
+      'Prompt Engineering',
+      'Model Inference',
+      'Dataset Preparation',
+      'Image Preprocessing',
+    ],
+    category: 'Research',
+    icon: 'research',
   },
 ];
 
