@@ -8,7 +8,7 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: 'Muhammad Fahad — Product Engineer | AI & Full-Stack Developer',
+  title: 'Muhammad Fahad - Product Engineer | AI & Full-Stack Developer',
   description:
     'Portfolio of Muhammad Fahad, a Computer Science student and product-focused developer building full-stack applications and AI-powered products.',
   keywords: [
