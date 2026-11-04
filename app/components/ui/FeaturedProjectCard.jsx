@@ -33,7 +33,7 @@ const FeaturedProjectCard = ({ project, priority = false, index = 0, reversed = 
     : { duration: 0.9, delay: index * 0.1, ease: [0.25, 0.1, 0.25, 1] };
 
   const primaryHref = project.demo || project.github;
-  const primaryLabel = project.demo ? 'View project' : 'View code';
+  const primaryLabel = project.demo ? 'Live Demo' : 'View code';
 
   return (
     <motion.article

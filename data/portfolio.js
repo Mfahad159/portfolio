@@ -6,7 +6,7 @@ export const siteLinks = {
   github: 'https://github.com/Mfahad159',
   linkedin: 'https://www.linkedin.com/in/muhammad-fahad-136436291',
   email: 'mianfahad664@gmail.com',
-  resume: assetPath('/Fahad_Resume.pdf'),
+  resume: 'https://drive.google.com/file/d/1yQHUTHgTbSzkvEb6uYWIZ1peH3OtPmPg/view?usp=sharing',
   resumeFileName: 'Fahad_Resume.pdf',
 };
 
@@ -233,42 +233,56 @@ export const experienceData = [
   },
 ];
 
-export const skills = [
-  'React',
-  'Next.js',
-  'Python',
-  'C++',
-  'C#',
-  'JavaScript',
-  'HTML/CSS',
-  'Assembly',
-  'FastAPI',
-  'Node.js',
-  'TypeScript',
-  'Tailwind CSS',
-  'Streamlit',
-  '.NET Windows Forms',
-  'PostgreSQL',
-  'Supabase',
-  'MongoDB',
-  'Firebase',
-  'Vercel',
-  'OpenAI APIs',
-  'Hugging Face',
-  'Prompt Engineering',
-  'VLMs',
-  'LLM APIs',
-  'Qwen',
-  'DeepSeek',
-  'LangChain',
-  'OpenRouter',
-  'Git',
-  'GitHub',
-  'VS Code',
+export const skillCategories = [
+  {
+    title: 'Languages & Frameworks',
+    skills: [
+      'Python',
+      'TypeScript',
+      'JavaScript',
+      'C++',
+      'C#',
+      'Assembly',
+      'HTML/CSS',
+      'React',
+      'Next.js',
+      'FastAPI',
+      'Node.js',
+      'Tailwind CSS',
+      'Streamlit',
+      '.NET Windows Forms',
+    ],
+  },
+  {
+    title: 'Tools & Platforms',
+    skills: [
+      'PostgreSQL',
+      'Supabase',
+      'MongoDB',
+      'Firebase',
+      'Vercel',
+      'Git',
+      'GitHub',
+      'VS Code',
+    ],
+  },
+  {
+    title: 'AI, Models & Concepts',
+    skills: [
+      'OpenAI APIs',
+      'LLM APIs',
+      'OpenRouter',
+      'LangChain',
+      'Hugging Face',
+      'Qwen',
+      'DeepSeek',
+      'VLMs',
+      'Prompt Engineering',
+    ],
+  },
 ];
 
-/** @deprecated Use skills */
-export const skillGroups = [];
+export const skills = skillCategories.flatMap((category) => category.skills);
 
 
 export const currentlyItems = [

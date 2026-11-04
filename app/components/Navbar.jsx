@@ -87,7 +87,8 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             </button>
             <Button
               href={siteLinks.resume}
-              download={siteLinks.resumeFileName}
+              target="_blank"
+              rel="noopener noreferrer"
               variant="secondary"
               className="!px-4 !py-2.5 !text-sm sm:!px-5 md:!px-4 md:!py-2 md:!text-sm"
             >

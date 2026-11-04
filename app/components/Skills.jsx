@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { skills } from '@/data/portfolio';
+import { skillCategories } from '@/data/portfolio';
 import Container from './ui/Container';
 import SectionHeading from './ui/SectionHeading';
 
@@ -18,29 +18,35 @@ const Skills = () => {
         <SectionHeading
           eyebrow="Skills"
           title="Skills & Tools"
-          description="Technologies and tools I build with."
+          description="Technologies, platforms, and models I build with."
         />
 
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.45 }}
-          className="mx-auto flex max-w-4xl flex-wrap justify-center gap-3"
-        >
-          {skills.map((skill, index) => (
-            <motion.span
-              key={skill}
-              initial={{ opacity: 0, y: 8 }}
+        <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-3">
+          {skillCategories.map((category, catIndex) => (
+            <motion.div
+              key={category.title}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: index * 0.02 }}
-              className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-4 py-2 text-sm text-[var(--muted)] transition-colors hover:border-[var(--border-hover)] hover:text-[var(--accent-alt)]"
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.45, delay: catIndex * 0.1 }}
+              className="card-surface flex flex-col p-6"
             >
-              {skill}
-            </motion.span>
+              <h3 className="mb-4 text-base font-semibold tracking-tight text-foreground">
+                {category.title}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {category.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full border border-[var(--border)] bg-[var(--surface)] px-3 py-1.5 text-xs font-medium text-[var(--muted)] transition-colors hover:border-[var(--border-hover)] hover:text-[var(--accent-alt)]"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
           ))}
-        </motion.div>
+        </div>
       </Container>
     </motion.section>
   );

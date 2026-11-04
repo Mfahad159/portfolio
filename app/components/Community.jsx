@@ -160,34 +160,6 @@ const Community = () => {
             </p>
           </div>
         </motion.div>
-
-        <StoryDivider />
-
-        {/* 03 — Beyond the code */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mx-auto max-w-2xl text-center"
-        >
-          <StoryLabel number="03" text="Beyond the code" />
-          <h3 className="text-2xl font-semibold">Beyond the code.</h3>
-          <p className="mt-4 text-base leading-relaxed text-[var(--muted)]">
-            Building software is only part of the journey. The people I build with, learn from, and
-            help along the way are just as important.
-          </p>
-          <div className="mt-6 inline-flex items-center gap-2 text-sm text-[var(--muted)]">
-            <Image
-              src={communityAssets.fastLogo}
-              alt="FAST-NUCES logo"
-              width={18}
-              height={18}
-              className="opacity-60"
-            />
-            <span>FAST-NUCES · Faisalabad</span>
-          </div>
-        </motion.div>
       </Container>
     </motion.section>
   );

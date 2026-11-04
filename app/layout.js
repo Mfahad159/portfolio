@@ -8,12 +8,12 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: 'Muhammad Fahad - Product Engineer | AI & Full-Stack Developer',
+  title: 'Muhammad Fahad — CS Student & Developer | Software & AI',
   description:
-    'Portfolio of Muhammad Fahad, a Computer Science student and product-focused developer building full-stack applications and AI-powered products.',
+    'Portfolio of Muhammad Fahad, a Computer Science student building and shipping real software and AI products.',
   keywords: [
     'Muhammad Fahad',
-    'Product Engineer',
+    'CS Student',
     'AI Developer',
     'Full-Stack Developer',
     'React',
@@ -23,17 +23,17 @@ export const metadata = {
   ],
   authors: [{ name: 'Muhammad Fahad' }],
   openGraph: {
-    title: 'Muhammad Fahad — Product Engineer | AI & Full-Stack Developer',
+    title: 'Muhammad Fahad — CS Student & Developer | Software & AI',
     description:
-      'Portfolio of Muhammad Fahad, a Computer Science student and product-focused developer building full-stack applications and AI-powered products.',
+      'Portfolio of Muhammad Fahad, a Computer Science student building and shipping real software and AI products.',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Muhammad Fahad — Product Engineer | AI & Full-Stack Developer',
+    title: 'Muhammad Fahad — CS Student & Developer | Software & AI',
     description:
-      'Portfolio of Muhammad Fahad, a Computer Science student and product-focused developer building full-stack applications and AI-powered products.',
+      'Portfolio of Muhammad Fahad, a Computer Science student building and shipping real software and AI products.',
   },
 };
 
