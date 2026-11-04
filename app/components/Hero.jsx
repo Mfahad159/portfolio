@@ -20,7 +20,7 @@ const Hero = () => {
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6, type: 'spring', stiffness: 100, delay: 0.05 }}
-            className="mb-6 flex justify-center lg:justify-start"
+            className="mb-4 flex justify-center sm:mb-5 lg:justify-start"
           >
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-[var(--accent)]/20 blur-xl" />
@@ -37,7 +37,7 @@ const Hero = () => {
 
           <motion.p
             {...heroSequence.eyebrow}
-            className="mb-3 text-2xl font-bold tracking-tight text-foreground sm:text-3xl"
+            className="mb-6 text-xl font-bold tracking-tight text-[var(--accent)] sm:mb-8 sm:text-2xl"
           >
             Muhammad Fahad
           </motion.p>
@@ -48,7 +48,7 @@ const Hero = () => {
           >
             CS student building & shipping
             <br />
-            <span className="text-gradient-accent">real software & AI products.</span>
+            <span className="text-gradient-accent">software & AI products.</span>
           </motion.h1>
 
           <motion.div
